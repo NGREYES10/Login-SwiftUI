@@ -14,13 +14,39 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mano" translatesAutoresizingMaskIntoConstraints="NO" id="Wgc-Ay-Yp9">
+                                <rect key="frame" x="28" y="267" width="359" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="IFJ-5z-bag"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DemoLogin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bf-AJ-2R7">
+                                <rect key="frame" x="135" y="491" width="144" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Bf-AJ-2R7" secondAttribute="trailing" constant="135" id="4Ph-qK-UrV"/>
+                            <constraint firstItem="1Bf-AJ-2R7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="EyF-3j-qBK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wgc-Ay-Yp9" secondAttribute="trailing" constant="27" id="MZi-fP-lW0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wgc-Ay-Yp9" secondAttribute="bottom" constant="271" id="MwE-cD-c6O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Bf-AJ-2R7" secondAttribute="bottom" constant="210" id="RDq-Kg-F9Y"/>
+                            <constraint firstItem="Wgc-Ay-Yp9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="UYB-er-x2V"/>
+                            <constraint firstItem="1Bf-AJ-2R7" firstAttribute="top" secondItem="Wgc-Ay-Yp9" secondAttribute="bottom" constant="26" id="wjQ-K8-2c8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="374.18478260869568"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mano" width="100" height="100"/>
+    </resources>
 </document>
