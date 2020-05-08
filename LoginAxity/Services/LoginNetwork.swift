@@ -27,7 +27,6 @@ class LoginNet: ObservableObject {
         DispatchQueue.main.async {
             Alamofire.request(url, method: .post, parameters: parametros).responseJSON { (response) in print(response)
                 
-                
                 if let result = response.result.value {
 
                     let json = result as! NSDictionary

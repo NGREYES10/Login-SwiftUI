@@ -14,11 +14,11 @@ import Combine
 
 class DetailsNetwork: ObservableObject{
     
-    @Published var userList = [UserList]()
+  @Published var userDetails = [UserDetails]()
     
     init () {
         DispatchQueue.main.async {
-            Alamofire.request("https://reqres.in/api/users?page=2").responseJSON{(response)in
+            Alamofire.request("https://reqres.in/api/users/").responseJSON{(response)in
                 
                 switch response.result {
                 case .success(let value):
@@ -28,8 +28,8 @@ class DetailsNetwork: ObservableObject{
                         let first_name = item.1["first_name"].string ?? ""
                         let email = item.1["email"].string ?? ""
                         let avatar = item.1["avatar"].string ?? ""
-                        let users = UserList(id: id, first_name: first_name, email: email, avatar: avatar)
-                        self.userList.append(users)
+                        let user = UserDetails(id: id, first_name: first_name, email: email, avatar: avatar)
+                        self.userDetails.append(user)
                     }
                 case .failure(let error):
                     print(error)

@@ -12,30 +12,35 @@ import SDWebImageSwiftUI
 struct User: View {
     
     @Binding var logeado :  Bool
-    @ObservedObject var manager = DetailsNetwork()
+    
+    
+    @ObservedObject var manager = listUser()
     var body: some View {
         NavigationView{
-            VStack{
-                List(self.manager.userList){
-                    user in
-                    HStack{
-                        AnimatedImage(url: URL(string: user.avatar))
-                        .resizable()
-                        .frame(width: 70, height: 70)
-                        .clipShape(Circle())
-                        VStack(alignment: .leading){
-                            Text(user.first_name)
+            VStack {
+              List{
+                  ForEach(self.manager.userList){
+                      item in
+                   NavigationLink(destination: DetailsView(logeado: .constant(false)))
+                   {
+                       VStack(alignment: .leading)
+                       {
+                            Text(item.first_name)
                                 .font(.title)
                             .bold()
-                            Text(user.email)
+                            Text(item.last_name)
                                 .font(.subheadline)
                         }
-                    }
-                    
-                    .navigationBarTitle("UserList", displayMode: .inline)
+                       
+                   }.navigationBarTitle("Personas", displayMode: .inline)
+     
                 }
+
+               }
+
             }
         }
+    
     }
 }
 
