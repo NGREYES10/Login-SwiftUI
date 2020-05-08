@@ -34,6 +34,7 @@ class LoginNet: ObservableObject {
                         self.authenticated = 1
                     }else if (json.value(forKey: "error") != nil){
                         self.authenticated = 2
+                        
                     }
                 }
             }

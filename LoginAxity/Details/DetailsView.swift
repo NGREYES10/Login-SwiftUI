@@ -17,23 +17,25 @@ struct DetailsView: View {
     
     var body: some View {
        VStack{
-          List(self.managers.userDetails){
-              user in
-              HStack{
-                  AnimatedImage(url: URL(string: user.avatar))
-                  .resizable()
-                  .frame(width: 70, height: 70)
-                  .clipShape(Circle())
-                  VStack(alignment: .leading){
-                      Text(user.first_name)
-                          .font(.title)
-                      .bold()
-                      Text(user.email)
-                          .font(.subheadline)
-                  }
-              }
-          .navigationBarTitle("Detalles", displayMode: .inline)
-          }
+        List{
+            ForEach(self.managers.userDetails){
+                user in
+                HStack{
+                    AnimatedImage(url: URL(string: user.avatar))
+                    .resizable()
+                    .frame(width: 70, height: 70)
+                    .clipShape(Circle())
+                    VStack(alignment: .leading){
+                        Text(user.first_name)
+                            .font(.title)
+                        .bold()
+                        Text(user.email)
+                            .font(.subheadline)
+                    }
+                }.navigationBarTitle("Detalles", displayMode: .inline)
+            }
+        }
+        
       }
     }
 }

@@ -33,6 +33,7 @@ struct User: View {
                         }
                        
                    }.navigationBarTitle("Personas", displayMode: .inline)
+                    .frame(height: 50)
      
                 }
 
