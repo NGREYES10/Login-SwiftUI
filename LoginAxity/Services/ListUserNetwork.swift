@@ -13,6 +13,7 @@ import Combine
 
 class listUser: ObservableObject {
     @Published var userList = [UserList]()
+    @Published var detail = [UserList]()
     
     init() {
         DispatchQueue.main.async {
@@ -24,10 +25,15 @@ class listUser: ObservableObject {
                         let id = item.1["id"].int ?? 0
                         let first_name = item.1["first_name"].string ?? ""
                         let last_name = item.1["last_name"].string ?? ""
-                       
-                        let users = UserList(id: id, first_name: first_name, last_name: last_name)
+                        let avatar = item.1["avatar"].string ?? ""
+                        let email = item.1["email"].string ?? ""
+                        let users = UserList(id: id, first_name: first_name, last_name: last_name, email: email, avatar: avatar)
                         self.userList.append(users)
+                       
+                       
                     }
+                
+                    
                 case .failure(let error):
                     print(error)
                 }

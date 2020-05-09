@@ -13,12 +13,12 @@ struct DetailsView: View {
     
    
     @Binding var logeado :  Bool
-    @ObservedObject var managers = DetailsNetwork()
+    @ObservedObject var managers = listUser()
     
     var body: some View {
        VStack{
         List{
-            ForEach(self.managers.userDetails){
+            ForEach(self.managers.userList){
                 user in
                 HStack{
                     AnimatedImage(url: URL(string: user.avatar))

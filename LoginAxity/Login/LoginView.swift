@@ -94,6 +94,7 @@ struct Login: View {
 }
 
 
+
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
         Login(logeado: .constant(false))

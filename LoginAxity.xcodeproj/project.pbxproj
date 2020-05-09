@@ -17,11 +17,9 @@
 		F932108B2464771E00FA8EFA /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932108A2464771E00FA8EFA /* UserList.swift */; };
 		F932108E2464811100FA8EFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932108D2464811100FA8EFA /* LoginView.swift */; };
 		F9321090246482AA00FA8EFA /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932108F246482AA00FA8EFA /* LoginNetwork.swift */; };
-		F932109B2464C7ED00FA8EFA /* DetailsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932109A2464C7ED00FA8EFA /* DetailsNetwork.swift */; };
 		F932109D2464C96F00FA8EFA /* ListUserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932109C2464C96F00FA8EFA /* ListUserNetwork.swift */; };
 		F932109F2464D3EE00FA8EFA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932109E2464D3EE00FA8EFA /* User.swift */; };
 		F93210A22464F08B00FA8EFA /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93210A12464F08B00FA8EFA /* DetailsView.swift */; };
-		F93210A62465236C00FA8EFA /* UserDetailClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93210A52465236C00FA8EFA /* UserDetailClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +37,9 @@
 		F932108A2464771E00FA8EFA /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		F932108D2464811100FA8EFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F932108F246482AA00FA8EFA /* LoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetwork.swift; sourceTree = "<group>"; };
-		F932109A2464C7ED00FA8EFA /* DetailsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNetwork.swift; sourceTree = "<group>"; };
 		F932109C2464C96F00FA8EFA /* ListUserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserNetwork.swift; sourceTree = "<group>"; };
 		F932109E2464D3EE00FA8EFA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F93210A12464F08B00FA8EFA /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		F93210A52465236C00FA8EFA /* UserDetailClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				F932108F246482AA00FA8EFA /* LoginNetwork.swift */,
-				F932109A2464C7ED00FA8EFA /* DetailsNetwork.swift */,
 				F932109C2464C96F00FA8EFA /* ListUserNetwork.swift */,
 			);
 			path = Services;
@@ -150,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				F93210A12464F08B00FA8EFA /* DetailsView.swift */,
-				F93210A52465236C00FA8EFA /* UserDetailClass.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -275,12 +269,10 @@
 				F932108B2464771E00FA8EFA /* UserList.swift in Sources */,
 				F93210712464750200FA8EFA /* AppDelegate.swift in Sources */,
 				F932108E2464811100FA8EFA /* LoginView.swift in Sources */,
-				F93210A62465236C00FA8EFA /* UserDetailClass.swift in Sources */,
 				F93210732464750200FA8EFA /* SceneDelegate.swift in Sources */,
 				F932109D2464C96F00FA8EFA /* ListUserNetwork.swift in Sources */,
 				F932109F2464D3EE00FA8EFA /* User.swift in Sources */,
 				F93210752464750200FA8EFA /* ContentView.swift in Sources */,
-				F932109B2464C7ED00FA8EFA /* DetailsNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
